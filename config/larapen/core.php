@@ -81,6 +81,7 @@ return [
      |-----------------------------------------------------------------------------------------------
      |
      */
+     // app/default/picture.jpg
 
     'picture' => [
         'default' => 'app/default/picture.jpg',

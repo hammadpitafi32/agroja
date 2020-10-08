@@ -187,6 +187,7 @@ class Picture extends BaseModel
 		$value = $this->attributes['filename'];
 		
 		if (!Storage::exists($value)) {
+			die('sddd');
 			$value = config('larapen.core.picture.default');
 		}
 		

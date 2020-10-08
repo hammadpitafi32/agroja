@@ -154,6 +154,7 @@ class DetailsController extends FrontController
 		} else {
 			$cacheId = 'post.with.user.city.pictures.' . $postId . '.' . config('app.locale');
 			$post = Cache::remember($cacheId, $this->cacheExpiration, function () use ($postId) {
+				
 				$post = Post::withCountryFix()
 					->unarchived()
 					->where('id', $postId)
@@ -192,6 +193,10 @@ class DetailsController extends FrontController
 			abort(404, t('Post not found'));
 		}
 		
+		// $post->load('pictures');
+		// echo "<pre>";
+		// print_r($post->toarray());
+		// die();
 		// Share post's details
 		view()->share('post', $post);
 		

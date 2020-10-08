@@ -1,0 +1,17 @@
+User-agent: *
+Disallow:
+
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /ajax/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /vendor/
+
+Sitemap: http://agroja.me/en/as/sitemaps.xml
+Sitemap: http://agroja.me/en/cm/sitemaps.xml
+Sitemap: http://agroja.me/en/gi/sitemaps.xml
+Sitemap: http://agroja.me/en/pk/sitemaps.xml

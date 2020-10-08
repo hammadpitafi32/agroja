@@ -298,7 +298,8 @@ class Post extends BaseModel implements Feedable
 	
 	public function pictures()
 	{
-		return $this->hasMany(Picture::class, 'post_id')->orderBy('position')->orderBy('id', 'DESC');
+
+		return $this->hasMany(Picture::class, 'post_id');
 	}
 	
 	public function savedByUsers()

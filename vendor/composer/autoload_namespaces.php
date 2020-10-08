@@ -6,10 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zendesk\\Console\\' => array($vendorDir . '/zendesk/zendesk_api_client_php/src'),
+    'Zendesk\\API\\' => array($vendorDir . '/zendesk/zendesk_api_client_php/src'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
+    'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Mcamara\\LaravelLocalization' => array($vendorDir . '/mcamara/laravel-localization/src'),
     'LiveControl\\EloquentDataTable' => array($vendorDir . '/livecontrol/eloquent-datatable/src'),
     'Laracasts\\Flash' => array($vendorDir . '/laracasts/flash/src'),
+    'Inflect' => array($vendorDir . '/mmucklo/inflect/src'),
     'Ignited\\LaravelOmnipay' => array($vendorDir . '/bedigit/laravel-omnipay/src'),
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
